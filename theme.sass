@@ -1,0 +1,64 @@
+$red: #923649
+$blue: #044289
+$bg: #f8f6f1
+$fg: #0a0a0a
+
+body
+    --radius-s: 5px
+    --radius-m: 5px
+    --radius-l: 5px
+    
+    --background-primary: #{lighten($bg, 1%)}
+    
+    --checkbox-radius: 5px
+    
+    --tab-radius: 5px
+    --tab-radius-active: 0px
+    
+    --input-radius: 5px
+    
+    --toggle-radius: 0px
+    --toggle-thumb-radius: 0px
+    --slider-thumb-radius: 0px
+    
+    --h1-color: #{$red}
+    
+    --prompt-width: 90vw
+    
+    --tab-radius: 0px
+    --tab-radius-active: 5px 5px 0 0
+    
+    --canvas-background: #{$bg}
+    --canvas-dot-pattern: #{lighten($fg, 80%)}
+
+    /* Horizontal rules */
+    --hr-color: #{$red}
+    --hr-thickness: 2px
+ 
+.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after 
+    display: none
+
+
+svg * 
+    stroke-linecap: square
+    stroke-linejoin: miter
+    rx: 0
+    ry: 0
+
+
+.menu 
+    padding: var(--size-2-1)
+
+
+.menu-item 
+    padding: var(--size-4-1) var(--size-4-2)
+
+
+.menu-separator 
+    margin: var(--size-2-1) calc(var(--size-2-1) * -1)
+
+hr
+  margin: 10px 0 10px 0
+
+.HyperMD-header-1
+  padding: 20px 0 20px 0 !important
